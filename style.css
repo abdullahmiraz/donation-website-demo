@@ -13,9 +13,11 @@ section > p{
     width: 60%;
     /* margin: 0 auto; */
     text-align: center;
+    
 }
 section > *{
     margin-top: 3rem;
+
     
 }
 section > input{
