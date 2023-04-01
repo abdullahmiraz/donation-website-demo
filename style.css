@@ -8,6 +8,10 @@ body section:not(.jumbotron) {
   padding: 1rem 4rem;
 }
 
+h1,h2,h3,h4{
+  font-size: larger;
+  font-weight: 800;
+}
 h1 {
   font-size: 50px;
   text-align: center;
@@ -87,12 +91,17 @@ section > input {
   flex-direction: row;
 }
 .donate-box > div {
+  align-items: start;
   justify-content: flex-start;
+  text-align: left;
   margin: 1rem;
-  padding: 2rem 1rem !important;
-  width: 30%;
+  padding: 4rem 1.5rem !important;
+  width: 25%;
   height: 340px;
   border-radius: 5px;
+}
+.donate-box > div > *{
+  margin-top: .35rem;
 }
 
 .box1 {
@@ -118,6 +127,7 @@ footer {
 .survive img {
   width: 400px;
   border-radius: 5px;
+  margin-right: 2rem;
 }
 .half-side {
   width: 40%;
@@ -146,3 +156,4 @@ footer {
 .subscribe > .cmn-btn {
   margin-left: -1rem;
 }
+
