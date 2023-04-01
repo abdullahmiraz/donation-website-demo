@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
 }
-body section:not(.jumbotron){
-    padding: 1rem 4rem;
+body section:not(.jumbotron) {
+  padding: 1rem 4rem;
 }
 
 h1 {
@@ -32,16 +32,16 @@ section > input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0,
-    #000 100%
-  );
-  background: url(./images/donation0.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url(./images/donation0.jpg);
   background-size: cover;
   height: 80vh;
   width: 100%;
   color: white;
+  position: relative; /* Set the jumbotron to relative position */
+}
+.jumbotron > *{
+  max-width: 600px;
+  margin-top: 0.3rem;
 }
 
 .amount {
@@ -75,47 +75,74 @@ section > input {
   background-color: rgb(247, 39, 74) !important;
 }
 .donate-plan,
-.donate-box,.donate-box >div{
-    text-align: center;
+.donate-box,
+.donate-box > div {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.donate-box{
-    flex-direction: row;
+.donate-box {
+  flex-direction: row;
 }
 .donate-box > div {
-justify-content: flex-start;
+  justify-content: flex-start;
   margin: 1rem;
   padding: 2rem 1rem !important;
   width: 30%;
-  height:340px;
+  height: 340px;
   border-radius: 5px;
-
 }
 
-.box1{
-    background-color: rgb(197, 237, 237);
+.box1 {
+  background-color: rgb(197, 237, 237);
 }
-.box2{
-    background-color: rgb(237, 202, 197);
+.box2 {
+  background-color: rgb(237, 202, 197);
 }
-.box3{
-    background-color: rgb(236, 225, 165);
+.box3 {
+  background-color: rgb(236, 225, 165);
 }
 
-.lives-depend, .survive{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.lives-depend,
+.survive,
+.update,
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.lives-depend   img, .survive img{
-    width: 400px ;
-    border-radius: 5px;
+.lives-depend img,
+.survive img {
+  width: 400px;
+  border-radius: 5px;
 }
-.half-side{
-    width: 40%;
-    padding: 0 2rem;
+.half-side {
+  width: 40%;
+  padding: 0 2rem;
+}
+.update {
+  flex-direction: column;
+}
+footer {
+  flex-direction: column;
+  background-color: rgb(17, 17, 42);
+  color: white;
+  padding: 2rem;
+}
+
+.subscribe {
+  padding: 3rem 8rem;
+  /* border: 1px solid red; */
+  background-color: rgb(243, 210, 149);
+}
+.subscribe > input {
+  border: none;
+  border-radius: 0;
+  padding: 0.3rem 1rem;
+}
+.subscribe > .cmn-btn {
+  margin-left: -1rem;
 }
